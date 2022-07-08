@@ -42,6 +42,7 @@ Puede llevar esto más lejos si tiene que cargar varias instancias del mismo wid
 # D) Animaciones.py
 ===================
 
+```
 """
 Cargar multiples instancias de un widget durante un período de tiempo para evitar retrasos.
 Útil para widgets más complejos que solo un botón.
@@ -84,6 +85,7 @@ class MessengerApp(App):
 
 if __name__ == '__main__':
     MessengerApp().run()
+```
 
 # E) producerconsumer.md
 ========================
@@ -112,6 +114,7 @@ Algunos consejos:
     Use Boxlayouts y GridLayouts, ya que encontré que estos diseños pueden ayudar a posicionar su widget de manera más eficiente que los diseños flotantes.
     Unir etiquetas juntas. En lugar de tener tres widgets de etiquetas. Únalos para formar una sola etiqueta y use el marcado para modificar el estilo/color de fuente y cualquier otra propiedad.
 
+```
 text_to = '''[font=Roboto-Black.ttf][size=18sp][color=' +self.rgb2hex(self.text_color) + ']' + 
 a[0] + 
 '[/color][/size][/font]' + 
@@ -119,6 +122,7 @@ a[0] +
 '[font=Roboto-Regular.ttf][size=16sp][color=' +self.rgb2hex(self.secondary_text_color) +']' + 
 a[1] + 
 '[/color][/size][/font]'''
+```
 
 Este es un ejemplo de la combinación de dos etiquetas completamente diferentes en un solo objeto de etiqueta. Paso el texto como esta cadena y al mostrarlo aparecería como si fueran etiquetas separadas, pero en realidad son una sola etiqueta. En algunos casos, esto puede reducir a la mitad la cantidad de widgets a crear.
 
